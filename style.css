@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Fredoka One", cursive;
+}
+
+body {
+  background-image: url("background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.key {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  color: white;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: rgba(240, 108, 0, 0.849);
+  text-shadow: 0 0 5px black;
+  transition: all 0.07s;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: pink;
+  text-shadow: 0 0 15px rgb(231, 10, 10);
+}
+
+kbd {
+  display: block;
+  font-size: 30px;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: pink;
+}
+
+@media (max-width: 399px) {
+  .key {
+    width: 80px;
+    height: 80px;
+  }
+
+  kbd {
+    display: block;
+    font-size: 20px;
+  }
+
+  .sound {
+    font-size: 0.8rem;
+  }
+}
